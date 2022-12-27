@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>lab</title>
+	<link rel="icon" type="text/css" href="img.png">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/varialbles.css"> 
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+	
+</style>
+<body>
+	<div class="container">
+		<h1 style="text-align: center;">Lab 4 JavaScript </h1>
+	</div>
+ <nav >
+	<div class="container">
+		<h2 class="log">Mohammed</h2>
+	    <ul>
+	        <li><a href="#">home</a></li>
+	     	<li><a href="#">about</a></li>
+	     	<li><a class="dropdown" href="#">dropdown
+	     	<ul class="uldown">
+	     	    <li>link </li>
+	     	    <li>link </li>
+	     	    <li>link </li>
+	     	    <li class="nested">dropDown 
+
+	     	    	<ul class="nestedDrop">
+	     	    	    <li>link</li> 
+	     	    	    <li>link</li>
+	     	    	    <li>link</li>
+	     	    	    <li>link</li>
+	     	    	</ul>
+
+	     	    </li>
+	     	</ul>
+
+	     </a></li> 
+	     <li><a href="#">constact</a></li>
+	    </ul>
+	</div>
+</nav> 
+
+
+<section class="slider">
+		<h2 class="h2Componet">citis I visit</h2>
+		<div class="container">
+			<div class="slide active" style="--i:1"  >
+				<img src="images/0.jpg" alt="">
+			</div>
+			<div class="slide" style="--i:2"  >
+				<img src="images/1.jpg" alt="">
+			</div>
+			<div class="slide" style="--i:3"  >
+				<img src="images/2.jpg" alt="">
+			</div>
+			<div class="slide" style="--i:4"  >
+				<img src="images/3.jpg" alt="">
+			</div>
+
+			<div class="buttons">
+			<button >
+				<i style="--i:.1s"	onclick="preVousSlide()" class="fa-solid fa-backward"></i>
+			</button>
+			<button style="--i:.4s"  onclick="nextSlide()" >
+				<i class="fa-solid fa-forward"></i>
+			</button>
+			<button style="--i:.7s" onclick="stopauto()"><i class="fa-solid fa-stop"></i></button>
+			<button style="--i:1s" onclick="playauto()"><i class="fa-solid fa-play"></i></button>
+			</div>
+		</div>
+</section>
+
+
+
+
+  <section class="gallery">
+	<h2 class="h2Componet">my gallery</h2>
+	<div class="container">
+
+
+	</div>
+</section> 
+
+<section class="contact">
+	<h2 class="h2Componet">contact us</h2>
+	<div class="container">
+		<form  method="get" action="page/sayhello.html" > 
+		<input type="text" placeholder="Write your full name "  id="fullname" name="name">
+		<p></p>
+		<input type="text" placeholder="Write your @Gmail "  id="fullname" name="email" required>
+		<div>
+			  <input list="cities" name="city" >
+			  <datalist id="cities">
+			    <option value="Cairo">
+			    <option value="Giza">
+			    <option value="Assyut">
+			    <option value="Minya">
+			    <option value="Luxor">
+			  </datalist>
+		</div>
+		<div class="passwordinput">
+			<input type="password" placeholder="your password" id="password"  >
+			<i class="fa-solid fa-eye classAye"></i>
+			<p></p>
+		</div>
+		<div class="passwordinput">
+		<input type="password" placeholder="rewrite your password" id="repassword"  >
+			<i class="fa-solid fa-eye  classAye"></i>
+			<p></p>
+		</div>
+		<input type="checkbox" required id="checked">
+		<input type="submit" name="submit" onclick="ValidationAndRedirect(event)" value="submit">
+	</form>
+	</div>
+</section>
+ 
+ <section class="rate">
+ 	<div class="container">
+ 		<i class="fa-solid fa-star"></i>
+ 		<i class="fa-solid fa-star"></i>
+ 		<i class="fa-solid fa-star"></i>
+ 		<i class="fa-solid fa-star"></i>
+ 		<i class="fa-solid fa-star"></i>
+ 	</div>
+ </section>
+<footer>
+	<div class="container">
+	
+			Created With By Mohammed Badr Makram Salim <br>
+				&copy;  All Rights Reserved @ 2022
+	</div>
+</footer>
+<script src="js/index.js" ></script>
+<script>
+	
+
+
+
+
+</script>
+</body>
+</html>
